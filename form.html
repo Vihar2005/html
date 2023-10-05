@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- username = _______________ -->
+
+    <form action="backend.php" method="post">   <!--method = post-->
+        <table>
+            <tr>
+                <td><label for="Username">Username</label></td>
+                <td><input id="Username" type="text" required placeholder="Enter your name"></td>  <!--username ma type= text-->
+            </tr>
+            <tr>
+                <td><label for="Password">Password</label></td>
+                <td><input id="Password" type="password" placeholder="Enter your password" name="" id=""></td>   <!--password ma type= password-->
+            </tr>
+            <tr>
+                <td><label for="Number">Mobile number</label></td>
+                <td><input id="Number" type="tel" placeholder="Enter your mobile number" name="" id=""></td>   <!--mobile number ma type= tel-->
+            </tr>
+            <tr>
+                <td><label for="Email">Email</label></td>
+                <td><input type="Email" placeholder="Enter email address" name="" id="email"></td> <!--email ma type= email-->
+            </tr>
+            <tr>
+                <td><label for="Dob">Dob</label></td>
+                <td><input type="date" name="" id="Dob"></td>  <!--dob ma type date-->
+            </tr>
+            <tr>
+                <td><label for="date-time">Date-time</label></td>
+                <td><input type="Datetime-local" name="" id="date-time" ></td> <!--date-time ma type= datetime-local-->
+            </tr>
+            <tr>
+                <td><label for="Gender">Gender</label></td>
+                <td>
+                    Male <input type="radio" name="Gender" id="">  <!--gender ma type= radio-->
+                    Female <input type="radio" name="Gender" id="">  <!--gender ma type= radio-->
+                    Other <input type="radio" name="Gender" id="">  <!--gender ma type= radio-->
+                </td>
+            </tr>
+            <tr>
+                <td><label for="Hobbies">Hobbies</label></td>
+                <td>
+                    Cricket <input type="checkbox" disabled checked name="" id=""> <!--hobbies ma type= checkbox-->
+                    Swiming <input type="checkbox" name="" id="">  <!--hobbies ma type= checkbox-->
+                    Travel <input type="checkbox" name="" id="">  <!--hobbies ma type= checkbox-->
+                    Gaming <input type="checkbox" name="" id="">  <!--hobbies ma type= checkbox-->
+                </td>
+            </tr>
+            <tr>
+                <td><label for="enter-h">enter your Hobbies</label></td>
+                <td>
+                    <textarea name="" id="" cols="30" rows="7"></textarea>
+
+                </td>
+            </tr>
+            <tr>
+                <td><label for="city">city</label></td>
+                <td>
+                    <select >
+                        <option value="None">None</option>
+                        <option value="ahmadabad">ahmadabad</option>
+                        <option value="surat">surat</option>
+                        <option value="amreli">amreli</option>
+                        <option value="nadiyad">nadiyad</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="Edution">Edution</label></td>
+                <td>
+                    <select multiple>
+                        <option value="None">None</option>
+                        <option value="10th">10th</option>
+                        <option value="12th">12th</option>
+                        <option value="ER">ER</option>
+                        <option value="DR">DR</option>
+                        <option value="PHD">PHD</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="file">profile photo</label></td>
+                <td><input type="file" accept="jpg" name="" id="file"></td>   <!--file ma type= file -->
+
+            </tr>
+            <tr>
+                <td><label for="color">color</label></td>
+                <td><input type="color" name="" id=""></td>   <!--color ma type= color-->
+            </tr>
+            <tr>
+                <td><label for="range">range</label></td>
+                <td>0<input type="range" name="" id="" valie="10">100</td>  <!--range ma type= range-->
+            </tr>
+            <tr>
+                <td><label for=""></label></td>
+                <td><input type="button" value="readmore"></td> <!--button ma type= button-->
+            </tr>
+            <tr>
+                <td><label for="submit">submit</label></td>
+                <td><input type="submit" value="savedata"></td>  <!--submit ma type= submit-->
+            </tr>
+            <tr>
+                <td><td><input type="reset" value="resetdata"></td></td> <!--reset ma type= resrt-->
+            </tr>
+
+        </table>
+    </form>
+</body>
+</html>

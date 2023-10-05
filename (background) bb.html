@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+                height: 400px;
+                margin: 10px;
+        }
+
+        .background-color{
+            background-color: red;
+        }
+        .background-img{
+            background-image: url(./img/dt_ps_us_pod3b_968x552.avif);
+        }
+        .background-repeat{
+            background-image: url(https://picsum.photos/id/337/200/300);
+             background-repeat: no-repeat; 
+            /* background-repeat: repeat-x; */
+            /* background-repeat: repeat-y; */
+        }
+        .background-attachment{
+            background-image: url(https://picsum.photos/id/337/200/300);
+            background-attachment: fixed;
+        }
+        .background-position{
+            background-image: url(https://picsum.photos/id/139/200/300);
+             background-repeat: no-repeat;
+              /* background-position: center;  */
+              /* background-position: right;  */
+               /* background-position: left;   */
+               background-position: 100px;
+        }
+        .background-size{
+            background-image: url(https://picsum.photos/id/139/1200/400);
+             background-repeat: no-repeat;
+             /* background-size: contain; */
+              background-size: cover ; 
+        }
+        .background-clip{
+            background-image: url(https://picsum.photos/id/639/1200/300);
+             background-repeat: no-repeat;
+             padding: 100px;
+             border: 20px solid peru;
+             /* background-clip: content-box; */
+             background-clip: border-box;
+             background-clip: padding-box;
+             background-size: cover;
+        }
+        .background{
+            background: red;
+        }
+        .background-flag{
+            background: linear-gradient( 150deg,orange,white,green);
+            background-color: gr;
+        }
+        
+    </style>
+</head>
+<body>
+    
+
+    <ul>
+        <li>background-color</li>
+        <li>background-img</li>
+        <li>background-repeat</li>
+        <li>background-attachment</li>
+        <li>background-position</li>
+        <li>background-size</li>
+        <li>background-clip</li>
+        <li>background</li>
+        <li>background-flag</li>
+    </ul> 
+
+    <div class="background-color">background-color</div>
+    <div class="background-img">background-img</div>
+    <div class="background-repeat">background-repeat</div>
+    <div class="background-attachment">background-attachment
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, soluta debitis, et reiciendis velit incidunt nihil, delectus laudantium ullam aliquid expedita voluptates recusandae magni quod pariatur. Porro ex perferendis perspiciatis!</p>
+    </div>
+    <div class="background-position">background-position</div>
+    <div class="background-size">background-size</div>
+    <div class="background-clip">background-clip</div>
+    <div class="background">background</div>
+    <div class="background-flag"><img src="https://picsum.photos/id/639/1200/300" alt=""></div>
+</body>
+</html>
