@@ -1,0 +1,13 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+.flag{
+    background: linear-gradient(rgba(239, 110, 5, 0.7),rgba(249, 246, 246, 0.5),rgb(4, 174, 4, 0.3)), url(../img/pexels-pixabay-36717.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 600px;
+    width: auto;
+}
