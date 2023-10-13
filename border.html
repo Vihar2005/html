@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 400px;
+            margin: 10px;
+        }
+        .solid{
+            border: 10px solid green;
+        }
+        .box-dashed{
+            border:  dashed 10PX RED;
+        }
+        .box-dotted{
+            border: dotted 10px orange;
+        }
+        .box-inset{
+            border:  inset 10px hotpink;
+        }
+        .box-outset{
+            border:  outset 10px hotpink;
+
+        }
+        .box-groove{
+            border: groove 30px violet;
+        }
+        .box-ridge{
+            border: ridge 30px violet;
+        
+        }
+        input{
+            border: solid 3px red;
+            outline: solid 2px yellow;
+        }
+        .box{
+            border-top: groove red 10px ;
+            border-right:solid rgb(0, 255, 21) 10px ;
+            border-bottom:dotted rgb(51, 0, 255) 10px ;
+            border-left:solid rgb(255, 0, 204) 10px ;
+        }
+        .mini-box{
+            width: 300px;
+            height: 300px;
+            border: solid 3px;
+            border-radius: 50%;
+        }
+        img{
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"> 
+        <!-- <input type="text"> -->
+        <div class="mini-box"></div>
+    </div>
+    <img src="https://picsum.photos/id/237/200/300" alt="">
+    <div class="solid"> solid</div>
+    <div class="box-dashed">box-dashed </div>
+    <div class="box-dotted">box-dotted </div>
+    <div class="box-inset">box-inset </div>
+    <div class="box-outset">box-outset </div>
+    <div class="box-groove">box-groove </div>
+    <div class="box-ridge">box-ridge </div>
+</body>
+</html>
