@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* table tr .br{
+            border: solid 2px ;
+        } */
+        table tr td {
+            border: solid 2px;
+        }
+
+        .containar {
+            border: solid 2px;
+        }
+        .border label{
+            border: solid 3px;
+            text-align: center;
+        }
+        .border input{
+            border: solid 3px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="containar">
+        <div>
+            <div class="book1 border">
+                <label for="Computer">Computer :</label>
+                <input type="number" id="bookOne" name="" placeholder="enter marks">
+            </div>
+            <div class="book2 border">
+                <label for="English">English :</label>
+                <input type="number" id="booktwo" name="" placeholder="enter marks">
+            </div>
+            <div class="book3 border">
+                <label for="python">python :</label>
+                <input type="number" id="bookthree" name="" placeholder="enter marks">
+            </div>
+            <div class="book4 border">
+                <label for="java">java :</label>
+                <input type="number" id="bookfour" name="" placeholder="enter marks">
+            </div>
+            <div class="book5 border">
+                <label for="php">php :</label>
+                <input type="number" id="bookfive" name="" placeholder="enter marks">
+            </div>
+            <div>
+                <button onclick="calculate()">calculate</button>
+            </div>
+        </div>
+        <div>
+            <table>
+                <tr>
+                    <td class="br">Total Marks:</td>
+                    <td>500</td>
+                </tr>
+                <br>
+                <tr>
+                    <td class="br">Obtained Marks:</td>
+                    <td id="obtain"></td>
+                </tr>
+                <br>
+                <tr>
+                    <td class="br">Percentege:</td>
+                    <td id="per"></td>
+                </tr>
+                <br>
+                <tr>
+                    <td class="br">Grade:</td>
+                    <td id="Grade"></td>
+                </tr>
+                <br>
+                <tr>
+                    <td class="br">Remarks:</td>
+                    <td id="remarks"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script>
+
+        function calculate() {
+
+            let a = parseInt(document.getElementById('bookOne').value);
+            let b = parseInt(document.getElementById('booktwo').value);
+            let c = parseInt(document.getElementById('bookthree').value);
+            let d = parseInt(document.getElementById('bookfour').value);
+            let e = parseInt(document.getElementById('bookfive').value);
+            if (a > 100 || b > 100 || c > 100 || d > 100 || e > 100) {
+                alert("Please enter correct value");
+            }
+            else {
+                let obtain = a + b + c + d + e;
+                document.getElementById("obtain").innerHTML = obtain;
+                let per = obtain / 500 * 100;
+                document.getElementById("per").innerHTML = per;
+                if (a > 40 && b > 40 && c > 40 && d > 40 && e > 40) {
+                    document.getElementById("remarks").innerHTML = "<span style='color:blue'>Pass</span>";
+                }
+                else {
+                    document.getElementById("remarks").innerHTML = "<span style='color:red'>Fail</span>";
+                }
+                if (per >= 80) {
+                    document.getElementById("Grade").innerHTML = "A";
+                }
+                else if (per >= 70) {
+                    document.getElementById("Grade").innerHTML = "B";
+                }
+                else if (per >= 60) {
+                    document.getElementById("Grade").innerHTML = "C";
+                }
+                else if (per >= 50) {
+                    document.getElementById("Grade").innerHTML = "d";
+                }
+                else if (per >= 40) {
+                    document.getElementById("Grade").innerHTML = "E";
+                }
+                else {
+                    document.getElementById("Grade").innerHTML = "F";
+                }
+            }
+        }
+
+    </script>
+</body>
+
+</html>

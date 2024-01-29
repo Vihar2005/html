@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h2>new element dynamically</h2>
+
+    <div id="newelement">
+        <!-- <p></p> -->
+    </div>
+    <button onclick="createNewelement()">Create element</button>
+
+
+<Script>
+
+    function createNewelement() {
+        var newpragraph = document.createElement('p');
+        newpragraph.textContent = "this is dynamically";
+
+        var newelement = document.getElementById('newelement');
+        newelement.appendChild(newpragraph);
+    };
+</Script>
+</body>
+</html>

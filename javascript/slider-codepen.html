@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .box {
+            border: solid black;
+            width: 300px;
+            height: 250px;
+            display: inline-block;
+            margin: 0 auto;
+            transition: 1s;
+        }
+
+        .cl-red {
+            background-color: red;
+        }
+
+        .cl-blue {
+            background-color: blue;
+        }
+
+        .cl-green {
+            background-color: green;
+        }
+
+        .cl-yellow {
+            background-color: yellow;
+        }
+        .cl-darkgray {
+            background-color: darkgray;
+        }
+
+        .slider {
+            justify-content: space-between;
+            text-align: center;
+            margin: 0 auto;
+            overflow: hidden;
+            /* width: 300px;
+            height: 250px; */
+            display: inline;
+        }
+        .slide{
+            display: inline;
+            width: 300px;
+            height: 550px;
+            overflow: hidden;
+        }
+
+        .btn {
+            text-align: center;
+        }
+
+        button {
+            padding: 10px 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="slide">
+        <div class="slider">
+            <div class="box cl-red"></div>
+        </div>
+        <div class="slider">
+            <div class="box cl-blue"></div>
+        </div>
+        <div class="slider">
+            <div class="box cl-green"></div>
+        </div>
+        <div class="slider">
+            <div class="box cl-yellow"></div>
+        </div>
+        <div class="slider">
+            <div class="box cl-darkgray"></div>
+        </div>
+    </div>
+
+    <div class="btn">
+        <button onclick="goprev()">prev</button>
+        <button onclick="gonext()">next</button>
+    </div>
+
+    <script>
+
+
+        const slide = document.querySelectorAll('.box')
+
+        let count = 0
+
+        slide.forEach(
+            (box, index) => {
+                box.style.left = `${index * 100}%`
+            }
+        )
+
+        const slidebox = () => {
+            slide.forEach(
+                (box) => {
+                    box.style.transform = `translateX(${count * 100}%)`
+                }
+            )
+        }
+
+        const goprev = () => {
+            count++
+            slidebox()
+        }
+        const gonext = () => {
+            count--
+            slidebox()
+        }
+    </script>
+
+
+
+</body>
+
+</html>

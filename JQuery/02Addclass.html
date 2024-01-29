@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .custom{
+            color: white;
+            background-color: teal;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa sapiente amet magnam eveniet modi
+        aspernatur autem eaque rem, dignissimos ipsam dicta aliquam esse quaerat eligendi laudantium provident itaque
+        nihil iure!</p>
+    <button id="btn-add-class">Add Class</button>
+    <button id="btn-remove-class">Remove Class</button>
+    <button id="btn-toggle-class">Toggle Class</button>
+    <br>
+    <br>
+    <button id="jquery-btn-add-class">jQuery Add Class</button>
+    <button id="jquery-btn-remove-class">jQuery Remove Class</button>
+    <button id="jquery-btn-toggle-class">jQuery Toggle Class</button>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        // $("button").html( "Next Step..." )
+        // document.getElementsByName
+        // document.querySelector("button").innerHTML="Next Step..."
+        // document.getElementById("btn-add-class").addEventListener("click",function () {
+        //     console.log("called");
+        //     document.getElementById("para").classList.add("custom") 
+        // })
+        // document.getElementById("btn-remove-class").addEventListener("click",function () {
+        //     console.log("called");
+        //     document.getElementById("para").classList.remove("custom") 
+        // })
+        // document.getElementById("btn-toggle-class").addEventListener("click",function () {
+        //     console.log("called");
+            
+        //     // document.getElementById("para").classList.toggle("custom")
+        //     // console.log(document.getElementById("para").classList.contains('custom')); 
+        //     if (document.getElementById("para").classList.contains('custom')) {
+        //         document.getElementById("para").classList.remove("custom") 
+        //     } else {
+        //         document.getElementById("para").classList.add("custom") 
+        //     }
+        // })
+        $("#jquery-btn-add-class").on("click", function () { $("#para").addClass("custom")  })
+        $("#jquery-btn-remove-class").on("click", function () { $("#para").removeClass("custom")  })
+        $("#jquery-btn-toggle-class").on("click", function () { $("#para").toggleClass("custom")  })
+        // $("#btn").click(function () {
+        //     console.log("called");
+        // }); 
+    </script>
+
+</body>
+
+</html>

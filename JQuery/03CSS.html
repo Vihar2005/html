@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            height: 50px;
+            margin: 5px;
+            padding: 5px;
+            float: left;
+        }
+
+        #box1 {
+            width: 50px;
+            color: yellow;
+            background-color: blue;
+        }
+
+        #box2 {
+            width: 80px;
+            color: rgb(255, 255, 255);
+            background-color: rgb(15, 99, 30);
+        }
+
+        #box3 {
+            width: 40px;
+            color: #fcc;
+            background-color: #123456;
+        }
+
+        #box4 {
+            width: 70px;
+            background-color: #f11;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p id="result">&nbsp;</p>
+    <div id="box1">1</div>
+    <div id="box2">2</div>
+    <div id="box3">3</div>
+    <div id="box4">4</div>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $("div").click(function () {
+            // console.log("called", this);
+            let styleProps = $(this).css(["width", "height", "color", "background-color"])
+            console.log("css ", styleProps);
+            var html = ["The clicked div has the following styles:"];
+            $.each(styleProps, function (prop, value) {
+                html.push(prop + ": " + value);
+            });
+            console.log(html);
+            console.log(html.join("<br>"));
+            // // $("#result").html(JSON.stringify(html))
+            // $("#result").html(html)
+            $("#result").html(html.join("<br>"))
+        })
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        .custom {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!-- <h2 id="Lorem">Lorem ipsum dolor, sit amet</h2> -->
+    <p id="Lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi libero similique quos veritatis aliquam
+        laboremollitia, fugiat accusantium repellat natus! Porro quos nam sunt? Possimus, ullam cumque deserunt expedita
+        veritatis ducimus vero qui? Dolor facilis ducimus nemo reiciendis harum mollitia facere explicabo obcaecati,
+        tempore accusantium officia quos architecto dolore molestiae.</p>
+    <button id="color">jQuery</button>
+
+    <button id="jquery-btn-add-class">jQuery Add Class</button>
+    <button id="jquery-btn-remove-class">jQuery Remove Class</button>
+
+        <button id="animate">animate</button>
+
+    <div style="background-color:red;height:100px;width:100px;position: absolute;"></div>
+
+    <script>
+
+
+        $(document).ready(function editcss() {
+            $("#color").click(function () {
+                $("h2").css({ backgroundColor: "yellow" });
+                $("#Lorem").css({ backgroundColor: "blue" });
+            });
+        });
+
+
+        $("#jquery-btn-add-class").on("click", function () { $("#Lorem").addClass("custom") })
+        $("#jquery-btn-remove-class").on("click", function () { $("#Lorem").removeClass("custom") })
+
+
+        $(document).ready(function () {
+            $("#animate").click(function () {
+                var div = $("div");
+                div.animate({ height: '300px', opacity: '0.4' }, "slow");
+                div.animate({ width: '300px', opacity: '0.8' }, "slow");
+                div.animate({ height: '100px', opacity: '0.4' }, "slow");
+                div.animate({ width: '100px', opacity: '0.8' }, "slow");
+            }); 
+        });
+    </script>
+</body>
+
+</html>
