@@ -1,0 +1,206 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil\fcharset1 Cambria Math;}{\f2\fnil\fcharset0 Cambria Math;}}
+{\*\generator Riched20 10.0.22621}{\*\mmathPr\mmathFont1\mwrapIndent1440 }\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs40\lang9 *************javascript Assignment*************\par
+\par
+(1) what is Javascript ?\par
+- - > JavaScript is a Client side Scripting lang just like other prog (c,c++) but js not able to connect with the DB directly.\par
+- - > JavaScript is used for making our web pages dynamic from client side.\par
+- - > With the help of JavaScript we can do some dynamic op like / * - +\par
+- - > Without refreshing or reloading our page will get and put some data from the server (ajax/fetch).\par
+\par
+(2) What is the use of isNaN function?\par
+- - >  Nan means Not-a-number.\par
+- - >  when the value is NaN than isNaN is return the true and when the value is not NaN than isNaN is return the false.\par
+\par
+(3) What is negative Infinity?\par
+- - > which is less than any real number. The symbol \ldblquote -\f1\u8734?\rdblquote\f0  is used to denote negative infinity.\par
+- - > negative infinity\f2  \f0 is\f2  \f0 a\f2  \f0 special\f2  \f0 numeric\f2  \f0 value\f2  \f0 that\f2  \f0 is\f2  \f0 returned\f2  \f0 when\f2  \f0 an\f2  \f0 arithmetic\f2  \f0 operation\f2  \f0 or\f2  \f0 mathematical\f2  \f0 function\f2  \f0 generates\f2  \f0 a\f2  \f0 negative\f2  \f0 value\f2  \f0 greater\f2  \f0 than\f2  \f0 the\f2  \f0 largest\f2  \f0 representable\f2  \f0 number\f2  \f0 in\f2  \f0 JavaScript\f2 .\par
+\par
+\f0 (4)  Which\f2  \f0 company\f2  \f0 developed\f2  \f0 JavaScript\f2 ?\f0\par
+- - >  JavaScript\f2  \f0 was\f2  \f0 created\f2  \f0 at\f2  \f0 Netscape\f2  \f0 Communications\f2  \f0 by\f2  \f0 Brendan\f2  \f0 Eich\f2  \f0 in\f2  \f0 1995\f2 .\par
+\par
+\f0 (5) What\f2  \f0 are\f2  \f0 undeclared\f2  \f0 and\f2  \f0 undefined\f2  \f0 variables\f2 ?\par
+\f0 - - >  Undeclared\f2  \f0 variables\f2  \f0 are\f2  \f0 those\f2  \f0 that\f2  \f0 have\f2  \f0 not\f2  \f0 been\f2  \f0 declared\f2  \f0 or\f2  \f0 defined\f2  \f0 in\f2  \f0 the\f2  \f0 current\f2  \f0 scope\f2 , \f0 while\f2  \f0 undefined\f2  \f0 variables\f2  \f0 are\f2  \f0 those\f2  \f0 that\f2  \f0 have\f2  \f0 been\f2  \f0 declared\f2  \f0 but\f2  \f0 not\f2  \f0 given\f2  \f0 a\f2  \f0 value\f2 .\par
+\par
+\f0 (6)  Write\f2  \f0 the\f2  \f0 code\f2  \f0 for\f2  \f0 adding\f2  \f0 new\f2  \f0 elements\f2  \f0 dynamically\f2 ?\par
+\f0 - - >   \par
+\f2\fs24 <!\f0 DOCTYPE\f2  \f0 html\f2 >\f0\par
+\f2 <\f0 html\f2  \f0 lang\f2 =\f0 "en"\f2 >\f0\par
+\f2 <\f0 head\f2 >\f0\par
+\f2     <\f0 meta\f2  \f0 charset\f2 =\f0 "UTF\f2 -\f0 8"\f2 >\f0\par
+\f2     <\f0 meta\f2  \f0 name\f2 =\f0 "viewport"\f2  \f0 content\f2 =\f0 "width\f2 =\f0 device\f2 -\f0 width\f2 , \f0 initial\f2 -\f0 scale\f2 =\f0 1\f2 .\f0 0"\f2 >\f0\par
+\f2     <\f0 title\f2 >\f0 Document\f2 </\f0 title\f2 >\f0\par
+\f2 </\f0 head\f2 >\f0\par
+\f2 <\f0 body\f2 >\f0\par
+\f2    \tab  <\f0 h2\f2 >\f0 new\f2  \f0 element\f2  \f0 dynamically\f2 </\f0 h2\f2 >\f0\par
+\f2     \tab <\f0 div\f2  \f0 id\f2 =\f0 "newelement"\f2 >\f0\par
+\f2         \tab\tab\f0\par
+\f2     \tab </\f0 div\f2 >\f0\par
+\f2     \tab <\f0 button\f2  \f0 onclick\f2 =\f0 "createNewelement\f2 ()\f0 "\f2 >\f0 Create\f2  \f0 element\f2 </\f0 button\f2 >\f0\par
+\f2 <\f0 Script\f2 >\f0\par
+\f2     \tab\f0 function\f2  \f0 createNewelement\f2 () \{\f0\par
+\f2         \tab\f0 var\f2  \f0 newpragraph\f2  = \f0 document\f2 .\f0 createElement\f2 (\f0 'p'\f2 );\f0\par
+\f2         \tab\f0 newpragraph\f2 .\f0 textContent\f2  = \f0 "this\f2  \f0 is\f2  \f0 dynamically"\f2 ;\f0\par
+\f2         \tab\f0 var\f2  \f0 newelement\f2  = \f0 document\f2 .\f0 getElementById\f2 (\f0 'newelement'\f2 );\f0\par
+\f2         \tab\f0 newelement\f2 .\f0 appendChild\f2 (\f0 newpragraph\f2 );\f0\par
+\f2     \tab\};\f0\par
+\f2 </\f0 Script\f2 >\f0\par
+\f2 </\f0 body\f2 >\f0\par
+\f2 </\f0 html\f2 >\par
+\par
+\f0\fs40 (7) What\f2  \f0 is\f2  \f0 the\f2  \f0 difference\f2  \f0 between\f2  \f0 ViewState\f2  \f0 and\f2  \f0 SessionState\f2 ?\par
+- - \f0 >  \par
+\par
+(8) What\f2  \f0 is\f2  === \f0 operator\f2 ?\f0\par
+- - >  The\f2  \f0 strict\f2  \f0 equality\f2  ( === ) \f0 operator\f2  \f0 checks\f2  \f0 whether\f2  \f0 its\f2  \f0 two\f2  \f0 operands\f2  \f0 are\f2  \f0 equal\f2 , \f0 returning\f2  \f0 a\f2  \f0 Boolean\f2  \f0 result\f2 .\f0\par
+Ex.\par
+\tab\fs28 let\f2  \f0 a\f2  = \f0 5\f2 ;\f0\par
+\tab let\f2  \f0 b\f2  = \f0 "5"\f2 ;\f0\par
+\tab console\f2 .\f0 log\f2 (\f0 "a\f2  === \f0 b"\f2 , \f0 a\f2  === \f0 b\f2 ); //\f0 false\par
+\par
+\fs40\lang9 (9)  How can the style/class of an element be changed?\par
+- - > To change all classes for an element: \par
+document. getElementById("MyElement"). className = "MyClass";\par
+\par
+(10)  How to read and write a file using JavaScript?\par
+- - >\par
+\par
+(11)  What are all the looping structures in JavaScript?\par
+- - > type of loop\par
+*   for Statement\par
+*   while Statement\par
+*   do while Statement\par
+*   for....in Statement\par
+*   for....of Statement\par
+\par
+\tab (1) for Statement\par
+\tab - - >  \par
+\fs28\tab for (let count = 1; count <=  10; count++)\{\par
+\tab console.log("i am vihar");\par
+\tab\};\par
+\tab // console.log("loop has ended");\par
+\par
+\fs40\tab (2) while Statement\par
+\tab - - >\par
+\fs28\tab let i = 1;\par
+\tab while ( i <= 5) \{\par
+\tab   console.log("i am vihar");\par
+\tab    i++;\par
+\tab\}\par
+\par
+\tab\fs40 (3) do while Statement\par
+\tab - - >\par
+\tab\fs28 let i = 1;\par
+\tab do \{\par
+\tab   console.log("i am vihar");\par
+\tab i++;\par
+\tab\} while(i < 10);\par
+\par
+\tab\fs40 (4)  for....in Statement\par
+\tab - - >\par
+\tab\fs28 let student \{\par
+\tab   name: "vihar",\par
+\tab   age: 18,\par
+\tab   cgpl: 5.1,\par
+\tab   ispass: true,\par
+\tab\};\par
+\tab for (let key in student) \{\par
+\tab   console.log("key =",key, "value = ",Student[key]);\par
+\tab\}\par
+\par
+\tab\fs40 (5)  for....of Statement\par
+\tab - - >\par
+\tab\fs28 let str = "i am vihar";\par
+\tab for(let i of str) \{\par
+\tab console.log("i = ",i);\par
+\tab\}\par
+\par
+\fs40 (12)  How can you convert the string of any base to an integer in JavaScript?\par
+- - >\par
+\fs28 let str = "vihar";\par
+console.log(typeof str);\par
+str = Number.parseInt(str);\par
+console.log(typeof str);\par
+\fs40\par
+(13)  What is the function of the delete operator?\par
+- - >  The delete operator removes a property from an object.\par
+\fs28 Ex.\par
+\tab let emp = \{\par
+            FirstName: "vihar",\par
+            lastName: "barvaliya",\par
+\tab\};\par
+           console.log(emp.FirstName);\par
+           delete emp.FirstName;\par
+           console.log(emp.FirstName);\par
+\par
+\fs40 (14)  What are all the types of Pop up boxes available in JavaScript?\par
+- - >   JavaScript has three kind of popup boxes: Alert box, Confirm box, and Prompt box.\par
+\par
+(15)  What is the use of Void (0)?\par
+- - >  JavaScript void 0 means returning undefined (void) as a primitive value.\par
+\par
+(16)  How can a page be forced to load another page in JavaScript?\par
+- - >  Approach: We can use window. location property inside the script tag to forcefully load another page in Javascript.\par
+\par
+(17)  What are the disadvantages of using innerHTML in JavaScript?\par
+- - >   It is very slow because as inner HTML already parses the content even we have to parse the content again so that's why it takes time.\par
+\par
+(18) Create password field with show hide functionalities.\par
+- - >   \par
+\fs18   <h2>hide password</h2>\par
+    <section>\par
+        <label for="password">Enter Password</label>\par
+        <input type="password" value="" id="typepass">\par
+        <br>\par
+        <label for="Show-password">Show Password</label>\par
+        <input type="checkbox" onclick="toggle()">\par
+    </section>\par
+    <script>\par
+        function toggle() \{\par
+            let temp = document.getElementById("typepass");\par
+            if (temp.type === "password") \{\par
+                temp.type = "text";\par
+            \}\par
+            else\{\par
+                temp.type = "password";\par
+            \}\par
+        \}\par
+    </script>\par
+\par
+\fs40 (19)  Create basic math operation in JS.\par
+- - >    \par
+\fs20  <div>\par
+        <h2>simple Arithmetic Calculator</h2> <hr>\par
+        <input type="number" placeholder="Enter Any Number" id="num1">\par
+        <br>\par
+        <input type="number" placeholder="Enter Any Number" id="num2">\par
+        <br>\par
+        <button id="add">+</button>\par
+        <button id="sub">-</button>\par
+        <button id="mul">*</button>\par
+        <button id="div">/</button><br>\par
+        <input type="number" readonly id="result">\par
+    </div>\par
+    <script>\par
+        var n1 = document.getElementById("num1");\par
+        var n2 = document.getElementById("num2");\par
+        var res = document.getElementById("result");\par
+        document.getElementById("add").addEventListener("click", function() \{\par
+            res.value = parseInt(n1.value)+parseInt(n2.value);\par
+        \});\par
+        document.getElementById("sub").addEventListener("click", function() \{\par
+            res.value = parseInt(n1.value)-parseInt(n2.value);\par
+        \});\par
+        document.getElementById("mul").addEventListener("click", function() \{\par
+            res.value = parseInt(n1.value)*parseInt(n2.value);\par
+        \});\par
+        document.getElementById("div").addEventListener("click", function() \{\par
+            res.value = parseInt(n1.value)/parseInt(n2.value);\par
+        \});\par
+    </script>\par
+\par
+\fs40 (20)   Create student result\par
+\par
+\fs2\par
+}
+ 
