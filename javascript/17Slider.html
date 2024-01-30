@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .active{
+            animation: slideranim 3s infinite;
+        }
+        @keyframes slideranim {
+            to{ transform: rotate(0deg) scale(0); }
+            from{ transform: rotate(360deg) scale(1); }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <div class="slider">
+            <div class="slider-img"><img src="./variablemnamingrule.jpg" alt=""> </div>
+            <div class="slider-img">kaipan </div>
+            <div class="slider-img"><img src="./typeof-operator-in-javascript.png" alt=""> </div>
+            <div class="slider-img"><img src="./Programming-languages-1024x576.png" alt=""> </div>
+        </div>
+    </main>
+    <script>
+        let SliderImages = document.getElementsByClassName("slider-img")
+        // console.log(SliderImages);
+        counter = 0
+        function Slider() {
+            // console.log("inside Slider function");
+            for (let index = 0; index < SliderImages.length; index++) {
+                // console.log(SliderImages[index]);
+                SliderImages[index].style.display="none"
+                SliderImages[index].classList.remove("active")
+            }
+            if (SliderImages.length <= counter ) {
+                console.log("inside if");
+                counter = 0
+            }
+            SliderImages[counter].style.display="block"
+            console.log(SliderImages[counter].classList);
+            SliderImages[counter].classList.add("active")
+            // console.log("counter",counter);
+            // console.log("SliderImages.length",SliderImages.length);
+            // console.log(counter);
+            counter++
+            // setInterval(Slider, 2000);
+            // setInterval(() => { }, interval);
+            setTimeout(Slider, 2000);
+        }
+        
+        // setInterval(Slider, 2000);
+        Slider()
+    </script>
+</body>
+
+</html>

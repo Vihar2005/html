@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <ol>
+        <li>for(init;consition;incre/decr)</li>
+        <li>while(consition)</li>
+        <li>arr.forEach(var)</li>
+        <li>for(let a in arr)</li>
+        <li>for(let a of arr)</li>
+        <li>do....while(consition)</li>
+    </ol>
+
+
+    <script>
+        // for (let index = 0; index <= 10; index++) {
+        //     console.log(index);
+        // }
+        let MarksArr = [50, 90, 60, 80];
+        // console.log(MarksArr.length);
+        for (let index = 0; index < MarksArr.length; index++) {
+            console.log(MarksArr[index]);
+        }
+
+        MarksArr.forEach(element => {
+            console.log(element);
+        });
+        let MarksObject = {"Eng":68,"Guj":70,"Maths":90,"Comp":100};
+        // MarksObject.forEach(element => {
+        //     console.log(element);
+        // });
+        for (const key in MarksObject) {
+            console.log("for in",key);
+        }
+        // for (const iterator of MarksObject) { //Uncaught TypeError: MarksObject is not iterable
+        for (const iterator of MarksArr) { //Uncaught TypeError: MarksObject is not iterable
+            console.log("for of",iterator);
+        }
+
+        data =0
+        
+        while (data<5) {
+            console.log("inside while",data);
+            data++
+        }
+        
+        dowhiledata =0
+        do {
+            console.log("inside do...while",dowhiledata);
+            dowhiledata++;
+        } while (dowhiledata>5);
+
+        // while (data<5) {
+        //     console.log("inside while",data);
+        //     data++
+        // }
+        
+    </script>
+
+</body>
+
+</html>

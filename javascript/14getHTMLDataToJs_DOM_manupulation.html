@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="text" class="inp-class" name="inp" id="inp">
+    <input type="button" value="Copy" onclick="copydata()" name="btn" id="btn">
+    <input type="text" name="inp1" id="inp1">
+    <script>
+
+        function copydata() {
+            // let inpData = document.getElementById("inp")
+            // console.log(inpData);
+            // console.log(inpData.value);
+            // let inpData = document.getElementsByClassName("inp-class") // HTMLCollection
+            // console.log(inpData);
+            // console.log(inpData[0]);
+            // console.log(inpData[0].value);
+            // let inpData = document.getElementsByName("inp") // NodeList 
+            // console.log(inpData);
+            // console.log(inpData[0]);
+            // console.log(inpData[0].value);
+            // let inpData = document.getElementsByTagName("input") //HTMLCollection
+            // console.log(inpData);
+            // console.log(inpData[0]);
+            // console.log(inpData[0].value);
+            // console.log(inpData[1].value);
+            // console.log(inpData[2].value);
+            // let inpData = document.querySelector("input")
+            // console.log(inpData);
+            // console.log(inpData.value);
+            // console.log(inpData[0]);
+            // console.log(inpData[0].value);
+            // let inpData = document.querySelector(".inp-class")
+            // console.log(inpData);
+            // console.log(inpData.value);
+            // let inpData = document.querySelector("#inp")
+            // console.log(inpData);
+            // console.log(inpData.value);
+            // let inpData = document.querySelectorAll("#inp")
+            // let inpData = document.querySelectorAll(".inp-class")
+            // console.log(inpData);
+            // console.log(inpData[0]);
+            // console.log(inpData[0].value);
+            // console.log(event);
+            // console.log(event.target);
+            // console.log(event.target.value);
+            // console.log(this);
+
+            let inpData = document.getElementById("inp")
+            console.log(inpData.value);
+            // document.getElementById("inp1").value = "test"
+            document.getElementById("inp1").value = inpData.value
+        }
+
+    </script>
+
+</body>
+</html>

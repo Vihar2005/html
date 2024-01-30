@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h2>Hoisting</h2>
+
+    <script>
+        
+        // console.log(letData); //Uncaught ReferenceError: Cannot access 'letData' before initialization
+        // console.log(constData);  //Uncaught ReferenceError: Cannot access 'constData' before initialization
+        // console.log(varData);  //undefined
+        // console.log(container);  // Uncaught ReferenceError: container is not defined
+        let letData = "letData"
+        var varData = "varData"
+        const constData = "constData"
+        container = "test"
+        // function test(params) { } //support hoisting
+        // ()=>{} //not support hoisting
+    </script>
+
+</body>
+
+</html>

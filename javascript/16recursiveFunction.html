@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h3>JavaScript Recursion</h3>
+    <p>Recursion is a process of calling itself. A function that calls itself is called a recursive function.</p> 
+    
+
+    <script>
+        function factorial(x) {
+            console.log(x);
+            // return x * factorial(x-1)
+            if (x==0) {
+                return 1
+            } else {
+                return x * factorial(x-1)   
+            }
+        }
+        const a = 10
+        console.log(factorial(a));
+        
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // Marks = 50 //
+        // let Marks = 450;
+        let Marks = 50;
+        // if (Marks > 50) {
+        // if (Marks >= 50) {
+        //     console.log("pass");
+        // }
+        if (Marks >= 0 && Marks <= 100) {
+            // console.log("pass");
+            if (Marks >= 50 && Marks < 60) {
+                document.write("pass")  
+            }else if (Marks >= 60 && Marks < 70) {
+                document.write("frst")  
+            }else if (Marks >= 70 && Marks < 80) {
+                document.write("dist")  
+            }else if (Marks >= 80 && Marks <= 100) {
+                document.write("grt")  
+            }else{
+                document.write("try again")  
+            }
+        }else{
+            document.write("invalid marks")  
+        }
+
+        lang = "2"
+        switch (lang) {
+            case "1":
+                document.write("<p>Gujarati</p>")  
+                break;
+            case "2":
+                document.write("<p>Hindi</p>")  
+                break;
+            case "3":
+                document.write("<p>English</p>")  
+                break;
+            default:
+                break;
+        }
+    </script>
+</body>
+</html>

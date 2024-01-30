@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>Scheduling: setTimeout and setInterval</h3>
+    <p> We may decide to execute a function not right now, but at a certain time later. That’s called “scheduling a
+        call”.</p>
+    <p> There are two methods for it:</p>
+    <ul>
+
+        <li> setTimeout allows us to run a function once after the interval of time.</li>
+        <li> setInterval allows us to run a function repeatedly, starting after the interval of time, then repeating
+            continuously at that interval.</li>
+    </ul>
+    <p>
+        These methods are not a part of JavaScript specification. But most environments have the internal scheduler and
+        provide these methods. In particular, they are supported in all browsers and Node.js.
+    </p>
+    <script>
+
+        setTimeout(() => {
+            console.log("called inside timeout");
+        }, 2000);
+        setInterval(() => {
+            console.log("called inside interval");
+            
+        }, 2000);
+    </script>
+
+</body>
+
+</html>
