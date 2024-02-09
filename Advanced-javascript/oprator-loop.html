@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+        <!-- ***** The ... Operator ***** -->
+
+    <p id="demo"></p>
+
+    <script>
+        const q1 =["jan","feb","mar"];
+        const q2 =["apr","may","jun"];
+        const q3 =["jul","aug","sep"];
+        const q4 =["oct","nov","dec"];
+
+        const year = [...q1, ...q2, ...q3, ...q4];
+        document.getElementById("demo").innerHTML = year;
+    </script>
+
+    <!-- ***** JavaScript For Of Loop ***** -->
+
+    <!-- <p id="demo"></p>
+    <script>
+        const cars = ["BMW","Volvo","mini"];
+
+        let text = "";
+        for (let x of cars) {
+            text += x + "<br>";
+        }
+        document.getElementById("demo").innerHTML = text;
+    </script> -->
+</body>
+</html>

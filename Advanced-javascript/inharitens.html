@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- <h2> inheritance  static thi </h2>
+    <script>
+
+        //parent
+        class A{
+            static money=100000
+        }
+
+        //child
+        class B extends A{
+            static showmymoney(){
+                console.log(super.money)
+            }
+        }
+
+        B.showmymoney()
+    </script> -->
+
+    <!-- <h2>inheritance</h2>
+    <script>
+
+        //parent
+        class A{
+            money=100000
+        }
+
+        //child
+        class B extends A{
+            showmymoney(){
+                console.log(this.money)
+            }
+        }
+
+        child = new B()
+        child.showmymoney()
+    </script> -->
+    
+
+    <!-- second Ex. -->
+    
+    <h2>inheritance</h2>
+    <script>
+
+        //parent
+        class A{
+            money=100000
+
+            performOperation(){
+                console.log("do surgery")
+            }
+        }
+
+        //child
+        class B extends A{
+            showmymoney(){
+                console.log(this.money)
+            }
+
+            performOperation(){
+                super.performOperation()
+                console.log(" i have own technique")
+            }
+        }
+
+        child = new B()
+        child.showmymoney()
+        child.performOperation()
+
+    </script>
+</body>
+</html>

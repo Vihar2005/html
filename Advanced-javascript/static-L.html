@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        class human {
+            // name = ""
+            // age = 0
+            // city = ""  // aa value kadhi nakho topan run thase
+            // phone = ""
+
+            constructor(data) {
+                this.name = data.a
+                this.age = data.b
+                this.city = data.c
+                this.phone = data.d
+            }
+
+            walk() {  // walk naam nu function chhe
+                console.log(`${this.name} is walking`)
+                human.showhaircolor()  // niseno program aaya run karo
+            }
+
+            static showhaircolor(){
+                console.log("black");
+            }
+        }
+
+        const nisarg = new human({ a: "vihar", b: 20, c: "ahm", d: 456123 })
+
+        const vihar = new human({ a: "dhruv", b: 22, c: "ahm", d: 452026123 })
+
+
+        nisarg.walk()
+        human.showhaircolor()
+
+        vihar.walk()
+    </script>
+</body>
+</html>

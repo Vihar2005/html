@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+    
+
+        class human {
+            name = "vihar"
+            age = 20
+            #mob = "258497789" //private
+            
+            getMobile = () => {
+                const mobile = this.#mob
+                return mobile
+            }
+
+            // setmobile=(x)=>{
+            //     this.#mob=x
+            // }
+        }
+
+        const vihar = new human()
+        console.log(vihar.getMobile())
+
+        // vihar.setmobile("98745682")
+        // console.log(vihar.getMobile())
+    </script>
+
+    <!-- <script>
+
+        class human {
+            name = "vihar"
+            #age = 20
+            #mob = "258497789" //private
+            get mobile(){
+                return this.#mob
+            }
+        }
+
+        const nisarg = new human()
+        console.log(nisarg)
+
+        console.log(nisarg.mobile)
+    </script> -->
+</body>
+
+</html>

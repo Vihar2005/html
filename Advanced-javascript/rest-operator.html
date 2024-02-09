@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <p id="demo"></p>
+    
+    <script>
+
+        function sum(...args){
+            let sum = 0;
+            for(let arg of args) sum += arg;
+            return sum;
+        }
+
+        let x = sum(4,5,8,9,1,5,15,15,25,28,102,150);
+        
+        document.getElementById("demo").innerHTML = x;
+    </script> -->
+
+    <script>
+
+        function myfun(a, b, c, ...manymoreArgs){
+            console.log("a", a);
+            console.log("b", b);
+            console.log("c", c)
+            console.log("manymoreArgs", manymoreArgs.length);
+        }
+
+        myfun("1", "2", "3", "4", "5", "6", "7")
+    </script>
+</body>
+</html>

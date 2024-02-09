@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- <script>
+
+        class human {
+            // name = ""
+            // age = 0
+            // city = ""  // aa value kadhi nakho topan run thase
+            // phone = ""
+
+            constructor(a, b, c, d) {
+                this.name = a
+                this.age = b
+                this.city = c
+                this.phone = d
+            }
+        }
+
+    const nisarg = new human("vihar",20,"ahm",456123)
+
+    console.log(nisarg);
+    </script> -->
+    <!-- <script>
+
+        class human {
+            // name = ""
+            // age = 0
+            // city = ""  // aa value kadhi nakho topan run thase
+            // phone = ""
+
+            constructor(data) {
+                this.name = data.a
+                this.age = data.b
+                this.city = data.c
+                this.phone = data.d
+            }
+        }
+
+    const nisarg = new human({a:"vihar",b:20,c:"ahm",d:456123})
+    
+
+    console.log(nisarg);
+    </script> -->
+
+
+    <!-- <script>
+
+        class human {
+            // name = ""
+            // age = 0
+            // city = ""  // aa value kadhi nakho topan run thase
+            // phone = ""
+
+            constructor(data) {
+                this.name = data.a
+                this.age = data.b
+                this.city = data.c
+                this.phone = data.d
+            }
+
+            walk() {  // walk naam nu function chhe
+                console.log("i am walking")
+            }
+        }
+
+        const nisarg = new human({ a: "vihar", b: 20, c: "ahm", d: 456123 })
+
+
+        nisarg.walk()
+    </script> -->
+
+    <!-- walk ma mare maru naam inset karvu chhe -->
+
+    <script>
+
+        class human {
+            name = ""
+            age = 0
+            city = ""  // aa value kadhi nakho topan run thase
+            phone = ""
+
+            constructor(a,b,c,d) {
+                this.name = a
+                this.age = b
+                this.city = c
+                this.phone = d
+            }
+
+            walk() {  // walk naam nu function chhe
+                console.log(`${this.name} is walking`)
+            }
+        }
+
+        const nisarg = new human({ a: "vihar", b: 20, c: "ahm", d: 456123 })
+
+        const vihar = new human({ a: "dhruv", b: 22, c: "ahm", d: 452026123 })
+
+
+        nisarg.walk()
+        vihar.walk()
+    </script>
+</body>
+
+</html>

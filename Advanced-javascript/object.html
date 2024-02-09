@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        class human{
+            name = ""
+            height = 0
+            weight = 0
+            bmi = 0
+
+
+            // walk=()=>{
+            //     console.log("i am walking");
+            // }
+
+            // calculatemybmi=()=>{
+            //     this.bmivihar = this.weight/(this.height*this.height)
+            //     console.log(bmi);
+            // }
+
+            constructor(p1,p2,p3){
+                this.name = p1
+                this.height = p2
+                this.weight = p3
+                this.bmi = p3/(p2*p2)
+            }
+        }
+
+        // const vihar = new human();
+        //     vihar.name = vihar
+        //     vihar.height = 5
+        //     vihar.weight = 60
+        //     vihar.bmi = vihar.weight/(vihar.height*vihar.height)
+        //     vihar.walk()
+        //     vihar.calculatemybmi()
+
+
+            const vihar= new human("vihar",20,50)
+             console.log(`details of vihar ${vihar.name} ${vihar.height} ${vihar.weight} ${vihar.bmi}`);
+
+    </script>
+</body>
+</html>

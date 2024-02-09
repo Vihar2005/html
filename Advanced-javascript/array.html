@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- ***** JavaScript Arrays ***** -->
+    <h1> The from() Method</h1>
+
+    <p id="demo"></p>
+
+    <script>
+        const myary = Array.from("ABCDEFG");
+        document.getElementById("demo").innerHTML = myary;
+    </script>
+
+
+    <!-- ***** JavaScript Arrays ***** -->
+    <!-- The keys() Method -->
+
+    <!-- <p id="demo"></p>
+
+        <script>
+
+            const fruits = ["banana","orange","Apple","mango","lemon"];
+            const keys = fruits.keys();
+
+            let text = "";
+            for (let x of keys){
+                text += x + "<br>";
+            }
+            document.getElementById("demo").innerHTML = text;
+        </script> -->
+
+
+    <!-- ***** JavaScript Arrays ***** -->
+    <!-- The find() Method -->
+
+
+    <!-- <p id="demo"></p>
+
+        <script>
+            const numbers = [4,9,15,25,29,35];
+            let first = numbers.find(myfunction);
+
+            document.getElementById("demo").innerHTML = "first number over 1 is " + first;
+
+            function myfunction(value,index,array) {
+                return value > 32;
+            }
+        </script> -->
+
+
+    <!-- ***** JavaScript Arrays ***** -->
+    <!-- The findIndex() Method -->
+
+    <!-- <p id="demo"></p>
+
+        <script>
+
+            const numbers = [4,9,15,25,29,35];
+
+            document.getElementById("demo").innerHTML = "first number over 1 has index " + numbers.findIndex(myfunction);
+
+            function myfunction(value,index,array) {
+                return value > 25;
+            }
+         </script> -->
+
+
+    <!-- JavaScript Arrays -->
+    <!-- The entries() method
+
+         <p id="demo"></p>
+
+         <script>
+            const fruits = ["banana","apple","mango"];
+            const f = fruits.entries();
+
+            for (let x of f) {
+                document.getElementById("demo").innerHTML += x + "<br>"; 
+            }
+         </script> -->
+</body>
+
+</html>
