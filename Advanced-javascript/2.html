@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JAVASCRIPT Assesment</title>
+</head>
+<body>
+  <h1>JAVASCRIPT Assesment</h1>
+  <input type="text" id="newTask" placeholder="ADD NEW...">
+  <button id="addTask">Add </button>
+  <ul id="taskList"></ul>
+
+  <script>
+    const newTaskInput = document.getElementById('newTask');
+const addTaskButton = document.getElementById('addTask');
+const taskList = document.getElementById('taskList');
+
+addTaskButton.addEventListener('click', () => {
+  // 1. Get the value from the input field
+  const newTask = newTaskInput.value.trim(); 
+
+  // 2. Validate: Make sure the input isn't empty
+  if (newTask !== "") {
+    // 3. Create a new list item (li) element
+    const newListItem = document.createElement('li');
+    // 4. Set the content of the list item
+    newListItem.textContent = newTask;
+    // 5. Append the new list item to the task list
+    taskList.appendChild(newListItem);
+    // 6. Clear the input field
+    newTaskInput.value = '';
+  }
+});
+  </script> 
+  </body>
+</html>

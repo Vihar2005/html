@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products from FakeStore API</title>
+</head>
+<style>
+    .product-card {
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.product-card h2 {
+    margin-top: 0;
+}
+
+.product-card p {
+    margin-bottom: 5px;
+}
+
+</style>
+<body>
+    <div id="products-container">
+        <!-- Products will be displayed here -->
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    const productsContainer = document.getElementById('products-container');
+
+    fetch('https://fakestoreapi.com/products')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then(data => {
+            // Loop through the data and create HTML elements for each product
+            data.forEach(product => {
+                const productCard = document.createElement('div');
+                productCard.classList.add('product-card');
+
+                const title = document.createElement('h2');
+                title.textContent = product.title;
+
+                const price = document.createElement('p');
+                price.textContent = `Price: $${product.price}`;
+
+                const description = document.createElement('p');
+                description.textContent = product.description;
+
+                productCard.appendChild(title);
+                productCard.appendChild(price);
+                productCard.appendChild(description);
+
+                productsContainer.appendChild(productCard);
+            });
+        })
+        .catch(error => {
+            console.error('Fetch error:', error);
+        });
+});
+
+    </script>
+</body>
+</html>
