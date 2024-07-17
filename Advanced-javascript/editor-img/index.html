@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Image Editor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="editor-container">
+        <input type="file" id="image-input">
+        <div id="image-container">
+            <img id="edited-image" src="" alt="Edited Image">
+        </div>
+        <div id="controls">
+            <label for="brightness-range">Brightness:</label>
+            <input type="range" id="brightness-range" min="-100" max="100" value="0">
+            <label for="saturation-range">Saturation:</label>
+            <input type="range" id="saturation-range" min="-100" max="100" value="0">
+            <button id="grayscale-btn">Grayscale</button>
+            <button id="invert-btn">Invert</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

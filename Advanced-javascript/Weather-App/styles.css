@@ -1,0 +1,17 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#weather-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#location {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#weather-info {
+    font-size: 18px;
+}

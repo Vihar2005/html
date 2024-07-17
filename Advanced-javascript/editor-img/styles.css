@@ -1,0 +1,21 @@
+#editor-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#image-container {
+    margin-top: 20px;
+}
+
+#edited-image {
+    max-width: 100%;
+    max-height: 300px;
+}
+
+#controls {
+    margin-top: 20px;
+}
+
+#controls input[type="range"] {
+    margin: 0 5px;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table class="tbl">
+     <tr>
+        <th>Product info</th>
+        <th>Quantity</th>
+        <th>Price (per unit)</th>
+        <th>Price (subtotal)</th>
+     </tr>
+     <tr>
+        <td>
+        <img src="./roti.jpg" alt="roti" style="width: 30px; height: auto;">    
+            <p>Roti</p>
+        </td>
+        <td>
+            <input type="number" id="1" oninput="calroti()">
+        </td>
+        <td><span id="pq1">20</span> Rs</td>
+        <td><span id="ppu1">0</span> Rs</td>
+        <td>
+            <button id="btn1">Remove</button>
+        </td>
+     </tr>
+
+     <tr>
+        <td>
+        <img src="./paneer_butter_masala.jpg" alt="paneer_butter_masala"  style="width: 30px; height: auto;">    
+            <p>Paneer Butter Massala</p>
+        </td>
+        <td>
+            <input type="number" id="2" oninput="calpaneer()">
+        </td>
+        <td><span id="pq2">250</span> Rs</td>
+        <td><span id="ppu2">0</span> Rs</td>
+        <td>
+            <button  id="btn2">Remove</button>
+        </td>
+     </tr>
+
+     <tr>
+        <td>
+        <img src="./burger.jpg" alt="burger" style="width: 30px; height: auto;">    
+            <p>Burger</p>
+        </td>
+        <td>
+            <input type="number" id="3" oninput="calburger()">
+        </td>
+        <td><span id="pq3">70</span> Rs</td>
+        <td><span id="ppu3">0</span> Rs</td>
+        <td>
+            <button  id="btn3">Remove</button>
+        </td>
+     </tr>
+
+     <tr>
+        <td>
+        <img src="./masala_dhosa.jpg" alt="masala_dhosa" style="width: 30px; height: auto;">    
+            <p>Masala Dhosa</p>
+        </td>
+        <td>
+            <input type="number"  id="4" oninput="caldhosa()">
+        </td>
+        <td><span id="pq4">120</span> Rs</td>
+        <td><span id="ppu4">0</span> Rs</td>
+        <td>
+            <button  id="btn4">Remove</button>
+        </td>
+     </tr>
+
+     <tr>
+        <td>
+        <!-- empty -->
+        </td>
+        <td>
+        <!-- empty -->
+        </td>
+        <td>
+        <!-- empty -->
+        </td>
+        <td><span id="total">0</span> Rs</td>
+        <td>
+        <!-- empty -->
+        </td>
+     </tr>
+    </table>
+<script src="script.js"></script>    
+</body>
+</html>
